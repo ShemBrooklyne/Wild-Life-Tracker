@@ -1,0 +1,63 @@
+{{#partial "content"}}
+
+
+    <div class="container main-pg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Wild-Life Tracker &copy;</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wild Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Endangered">Key in New Animals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">View Rangers</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                No.1 Pride of Kenya
+              </span>
+            </div>
+        </nav>
+
+        <div class="container forms-tr">
+            <br><br>
+            <div class="row form">
+                <div class="col-md-8">
+                    <h1 class="text-white text-center">Key in New Entry of Animal</h1>
+                    <form class="container form1" action="" method="post"> <br>
+                        <div class="sqForm">
+                            <label class="text-white" for="ranger">Name of Ranger</label> <br>
+                            <input type="text" placeholder="Enter the Ranger's Name" name="ranger" required> <br>
+                            <br>
+                            <label class="text-white" for="animal">Name of Animal</label> <br>
+                            <input type="number" placeholder="Enter the Name of Animal Found" name="animal" required>
+                            <br> <br>
+                            <label class="text-white" for="health">Health Status of the Animal</label> <br>
+                            <input type="text" placeholder="Ill or Healthy" name="health" required> <br> <br>
+                            <label class="text-white" for="age">Estimated Age of the Animal</label> <br>
+                            <input type="text" placeholder="Enter Area Where Found" name="site" required> <br> <br>
+                            <button class="btn btn-secondary" type="submit">Submit Response</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 chart">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+{{/partial}}
+{{>layout.hbs}}

@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.main-pg {
+    height: 801px;
+    background-image: url('/images/mainpg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pg-1, .pg-2 {
+    height: 400px;
+    margin-top: 13%;
+}
+
+.pg-1 {
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.pg-2, .chart {
+    background-color: rgba(240, 248, 255, 0.548);
+}
+
+.btns {
+    margin-top: 18%;
+    margin-left: 25%;
+}
+
+.forms-tr {
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 620px;
+    margin-top: 10%;
+}
+
+input {
+    width: 320px;
+}
+
+.form {
+    /* border: solid black;
+    height: 350px;
+    width: fit-content; */
+    margin-top: 0%;
+}
+
+.form1 {
+    margin-left: 30%;
+}
+
+.quote {
+    font-family: 'Poller One', cursive;
+    font-size: 25px;
+    padding: 8%;
+}
+
+.auth {
+    text-align: right;
+}
+
