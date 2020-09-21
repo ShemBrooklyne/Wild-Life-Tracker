@@ -24,4 +24,4 @@ dependencies {
 }
 
 apply plugin: 'java'
-applicationName = 'WildlifeTracker'
+applicationName = 'shemswildlife-tracker'
