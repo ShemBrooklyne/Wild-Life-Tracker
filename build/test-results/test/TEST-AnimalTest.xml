@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AnimalTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-09-21T18:44:31" hostname="access-ThinkPad-T450" time="0.384">
+  <properties/>
+  <testcase name="animal_instantiatesCorrectly_false" classname="AnimalTest" time="0.164"/>
+  <testcase name="getName_animalInstantiatesWithName_Deer" classname="AnimalTest" time="0.011"/>
+  <testcase name="save_assignsIdToObjectAndSavesObjectToDatabase" classname="AnimalTest" time="0.063"/>
+  <testcase name="equals_returnsTrueIfNameIsTheSame_false" classname="AnimalTest" time="0.008"/>
+  <testcase name="delete_deletesAnimalFromDatabase_0" classname="AnimalTest" time="0.045"/>
+  <testcase name="all_returnsAllInstancesOfAnimal_false" classname="AnimalTest" time="0.048"/>
+  <testcase name="find_returnsAnimalWithSameId_secondAnimal" classname="AnimalTest" time="0.042"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

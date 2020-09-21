@@ -1,0 +1,78 @@
+<div class="container animals">
+  #if ($animals.size() == 0)
+    <a href="/animal/new">Add an animal to system to Report a Sighting</a>
+    <div class="content-stuff animal-form">
+      <h3>Add Endangered Animals To The Database</h3>
+      <form action="/animal/new" method="post">
+        <input type="hidden" name="endangered">
+        <label>Enter animal name</label>
+        <input type="text" name="name" class="form-control">
+        <label>Health: Select from these options</label>
+          <br>
+          <select name="health" class="custom-select">
+            <option selected>Health Information</option>
+            <option>Healthy</option>
+            <option>Okay</option>
+            <option>Ill</option>
+          </select>
+          <br>
+        <label>Age: select from these options</label>
+          <select name="age" class="custom-select">
+            <option selected>Select Age</option>
+            <option>Newborn</option>
+            <option>Young</option>
+            <option>Adult</option>
+          </select>
+          <br>
+          <br>
+        <button type="submit" class="btn btn-primary tempting-azure-gradient">Add Animal</button>
+      </form>
+    </div>
+  #else
+    <div class="row">
+      <div class="col-md-8 content-stuff">
+        <h3>Endangered Animals</h3>
+        <div class="row">
+        #foreach ($endangeredAnimal in $endangeredAnimals)
+          <div class="card col-md-3 card-animals">
+            <a href="/endangered_animal/$endangeredAnimal.getId()">
+              <h4>$endangeredAnimal.getName()</h4>
+              <p>Click for details</p>
+            </a>
+          </div>
+        #end
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="content-stuff animal-form">
+        <h3>Add Endangered Animals To The Database</h3>
+        <form action="/animal/new" method="post">
+          <input type="hidden" name="endangered">
+          <label>Enter animal name</label>
+          <input type="text" name="name" class="form-control">
+          <label>Health: Select from these options</label>
+            <br>
+            <select name="health" class="custom-select">
+              <option selected>Health Information</option>
+              <option>Healthy</option>
+              <option>Okay</option>
+              <option>Ill</option>
+            </select>
+            <br>
+          <label>Age: select from these options</label>
+            <select name="age" class="custom-select">
+              <option selected>Select Age</option>
+              <option>Newborn</option>
+              <option>Young</option>
+              <option>Adult</option>
+            </select>
+            <br>
+            <br>
+          <button type="submit" class="btn btn-secondary tempting-azure-gradient">Add Animal</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  #end
+</div>

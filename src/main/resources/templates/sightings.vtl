@@ -1,0 +1,43 @@
+<div class="container content">
+  <h2>All Sightings</h2>
+
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th scope="col">Animal ID</th>
+      <th scope="col">Animal Name</th>
+      <th scope="col">Location Spotted</th>
+      <th scope="col">Spotted By</th>
+      <th scope="col">Animal Type</th>
+      <th scope="col">Time Spotted</th>
+    </tr>
+    </thead>
+    #foreach ($sighting in $sightings)
+    #if ($sighting.getAnimal_type().equals("endangered"))
+    <tbody>
+    <tr>
+      <td>$sighting.getAnimalId()</td>
+      <td>$sighting.getEndangeredAnimal().getName()</td>
+      <td>$sighting.getLocation()</td>
+      <td>$sighting.getRangerName()</td>
+      <td>$sighting.getAnimal_type()</td>
+      <td>$sighting.getSighting()</td>
+    </tr>
+    </tbody>
+    #else
+    <tbody>
+    <tr>
+      <td>$sighting.getAnimalId()</td>
+      <td>$sighting.getAnimal().getName()</td>
+      <td>$sighting.getLocation()</td>
+      <td>$sighting.getRangerName()</td>
+      <td>$sighting.getAnimal_type()</td>
+      <td>$sighting.getSighting()</td>
+    </tr>
+    </tbody>
+    #end
+    #end
+  </table>
+</div>
+
+
