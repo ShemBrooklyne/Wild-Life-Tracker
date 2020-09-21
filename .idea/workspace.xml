@@ -1,67 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb5db6e5-aaf8-402f-975d-831e027fce08" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Report.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/CategoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/ReportTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/Hero-Squad-1.0-SNAPSHOT.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/Hero-Squad-1.0-SNAPSHOT.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/WildlifeTracker-1.0-SNAPSHOT.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/WildlifeTracker-1.0-SNAPSHOT.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/shemsheroes-1.0-SNAPSHOT.tar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/shemsheroes-1.0-SNAPSHOT.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Hero-Squad-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/WildlifeTracker-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/public/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/category-form.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/category.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/proceed.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/report.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/sdt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/WildlifeTracker" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/WildlifeTracker.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_6151956984752035330_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/test/jar_extract_8915105829609003386_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Report.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/category-form.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/category.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/proceed.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/report.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sdt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CategoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ReportTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="fb5db6e5-aaf8-402f-975d-831e027fce08" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
