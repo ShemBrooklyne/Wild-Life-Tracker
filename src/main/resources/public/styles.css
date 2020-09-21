@@ -1,0 +1,105 @@
+body{
+  background-image: url("/images/mainpg.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main-pg {
+  background-image: url("/images/mainpg.jpg");
+}
+.content{
+  background-color: rgba(218, 224, 233, 0.582);
+  margin-top: 2%;
+}
+
+.content-stuff{
+  background-color: rgba(218, 224, 233, 0.582);
+}
+
+.main-pg {
+    height: 801px;
+    background-image: url('/images/mainpg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pg-1, .pg-2 {
+    height: 400px;
+    margin-top: 13%;
+}
+
+.pg-1 {
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+.pg-2, .chart {
+    background-color: rgba(240, 248, 255, 0.548);
+}
+
+.btns {
+    margin-top: 18%;
+    margin-left: 25%;
+}
+
+.forms-tr {
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 520px;
+    margin-top: 8%;
+}
+
+.forms-rt {
+    background-color: rgba(240, 248, 255, 0.548);
+    height: 520px;
+    margin-top: 5%;
+}
+
+.tablet {
+    background-color: rgba(240, 248, 255, 0.548);
+}
+
+
+
+.form {
+    /* border: solid black;
+    height: 350px;
+    width: fit-content; */
+    margin-top: 0%;
+}
+
+.form1 {
+    margin-left: 30%;
+}
+
+.quote {
+    font-family: 'Poller One', cursive;
+    font-size: 25px;
+    padding: 8%;
+}
+
+.auth {
+    text-align: right;
+}
+
+select {
+    width: 420px;
+}
+
+.sight-forms{
+  margin: 1%;
+}
+.animals{
+  padding: 2%;
+}
+.animal-form{
+  padding: 2%;
+}
+.card-animals{
+  margin: 2%;
+}
+.sightings-header{
+  text-align: center;
+  text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class = "card content-stuff">
+  <h1>$animal.getName()</h1>
+  <h4>Animal ID: $animal.getId()</h4>
+
+  #if($animal.getSightings().size() == 0)
+    <p>Click here to report a sighting <a href="/sightings/new">Sightings</a>.</p>
+  #else
+    <h3>$animal.getName()'s sightings</h3>
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th scope="col">Animal ID</th>
+        <th scope="col">Spotted By</th>
+        <th scope="col">Location</th>
+        <th scope="col">Time Spotted</th>
+      </tr>
+      </thead>
+    #foreach($sighting in $animal.getSightings())
+      <tbody>
+      <tr>
+        <td>$sighting.getAnimalId()</td>
+        <td>$sighting.getRangerName()</td>
+        <td>$sighting.getLocation()</td>
+        <td>$sighting.getSighting()</td>
+      </tr>
+      <tbody>
+    #end
+    </table>
+  #end
+  </div>
+</div>
