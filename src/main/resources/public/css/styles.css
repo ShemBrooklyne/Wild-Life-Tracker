@@ -34,13 +34,11 @@ body {
 
 .forms-tr {
     background-color: rgba(0, 0, 0, 0.644);
-    height: 620px;
-    margin-top: 10%;
+    height: 520px;
+    margin-top: 5%;
 }
 
-input {
-    width: 320px;
-}
+
 
 .form {
     /* border: solid black;
@@ -61,5 +59,9 @@ input {
 
 .auth {
     text-align: right;
+}
+
+select {
+    width: 420px;
 }
 

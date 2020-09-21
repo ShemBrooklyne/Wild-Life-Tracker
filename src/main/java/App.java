@@ -1,38 +1,30 @@
-import static spark.Spark.*;
-import static spark.route.HttpMethod.post;
-
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
-
-
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import static spark.Spark.*;
 
 public class App {
 
-
     public static void main(String[] args) {
-
 
         staticFileLocation("/public");
 
-//        main page
+
+//        String layout = "public/templates/layout.hbs";
+
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(new HashMap(), "index.hbs");
         }, new HandlebarsTemplateEngine()
+
         );
 
-        //        Keying Info page
-        get("/Endangered", (request, response) -> {
-                    Map<String, Object> model = new HashMap<String, Object>();
-                    return new ModelAndView(new HashMap(), "Endangered.hbs");
-                }, new HandlebarsTemplateEngine()
-        );
-
+        get("/form", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(new HashMap(), "category-form.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
