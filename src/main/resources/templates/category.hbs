@@ -1,95 +1,122 @@
-<div class="row">
-    <div id="instruction" class="col-md-3"><br><br>
-        <label> $category.getType() </label>
-        <br>
-        <form class="grow" action="/reports" method="post">
-            <label><strong>Ranger Name</strong></label>
-            <input type="text" name="rangername" class="form-control"><br>
+{{#partial "content"}}
 
-            <input type="hidden" name="categoryId" class="form-control" value="$category.getId()">
-            <input type="hidden" name="categoryId" class="form-control" value="$category.getId()">
-            <input type="hidden" name="category" class="form-control" value="$category.getType()">
 
-            <label><strong>Location</strong></label>
-            <select class="form-control" name="zone">
-                <option value="Zone A">Zone A</option>
-                <option value="Zone B">Zone B</option>
-                <option value="Zone C">Zone C</option>
-            </select><br>
+<div class="container-fluid main-pg">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Wild-Life Tracker &copy;</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wild Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Endangered">Key in New Animals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">View Rangers</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                No.1 Pride of Kenya
+            </span>
+        </div>
+    </nav>
 
-            <label><strong>Name of Animal</strong></label>
-            <input type="text" name="name" class="form-control"><br>
+    <div class="">
+        <div class="row">
+            <div id="instruction" class="col-md-3"><br><br>
+                <label>
+                    <h1 class="text-center text-white">Key in New Animal</h1>
+                </label>
+                <br>
+                <form class="grow" action="/reports" method="post">
+                    <label><strong>Ranger Name</strong></label>
+                    <input type="text" name="rangername" class="form-control"><br>
 
-            <label><strong>Health</strong></label>
-            <select class="form-control" name="health">
-                <option value="healthy">healthy</option>
-                <option value="okay">okay</option>
-                <option value="ill">ill</option>
-            </select><br>
+                    <input type="hidden" name="categoryId" class="form-control" value="$category.getId()">
+                    <input type="hidden" name="categoryId" class="form-control" value="$category.getId()">
+                    <input type="hidden" name="category" class="form-control" value="$category.getType()">
 
-            <label><strong>Age</strong></label>
-            <select class="form-control" name="age">
-                <option value="New Born">New Born</option>
-                <option value="Young">Young</option>
-                <option value="Adult">Adult</option>
-            </select><br>
+                    <label><strong>Location</strong></label>
+                    <select class="form-control" name="zone">
+                        <option value="Zone A">Zone A</option>
+                        <option value="Zone B">Zone B</option>
+                        <option value="Zone C">Zone C</option>
+                    </select><br>
 
-            <label>Number of animals sighted</label>
-            <input type="number" name="count" id="count" class="form-control"><br>
-            <button type="submit" class="btn btn-info">Add Animal</button>
-        </form>
-    </div>
+                    <label><strong>Name of Animal</strong></label>
+                    <input type="text" name="name" class="form-control"><br>
 
-    <div  class="col-md-9">
-        <div class="nav">
-            <navbar><a class="cc" href="/">Home</a></navbar>
-            <navbar><a class="cc" href="/category/25">Endangered Animals</a></navbar>
-            <navbar><a class="cc" href="/category/26">Other Animals</a></navbar>
-        </div><br>
-        <table class="table table-hover table-stripped table-bordered table-sm animated rubberBand " cellspacing="0">
-            <thread>
-                <tr>
-                    <th class="th-sm">Ranger Name</th>
-                    <th class="th-sm">Animal</th>
-                    <th class="th-sm"> Location</th>
-                    <th class="th-sm">Health</th>
-                    <th class="th-sm">Age</th>
-                    <th class="th-sm"> Time </th>
-                    <th class="th-sm">Number of Animals</th>
-                <tr>
+                    <label><strong>Health</strong></label>
+                    <select class="form-control" name="health">
+                        <option value="healthy">healthy</option>
+                        <option value="okay">okay</option>
+                        <option value="ill">ill</option>
+                    </select><br>
+
+                    <label><strong>Age</strong></label>
+                    <select class="form-control" name="age">
+                        <option value="New Born">New Born</option>
+                        <option value="Young">Young</option>
+                        <option value="Adult">Adult</option>
+                    </select><br>
+
+                    <label>Number of animals sighted</label>
+                    <input type="number" name="count" id="count" class="form-control"><br>
+                    <button type="submit" class="btn btn-info">Add Animal</button>
+                </form>
+            </div>
+
+            <div class="col-md-9 tablet">
+
+                <table class="table table-hover table-stripped table-bordered table-sm animated rubberBand "
+                    cellspacing="0">
                     <thread>
-                        <tbody>
-                        #foreach($report in $reports)
                         <tr>
+                            <th class="th-sm">Ranger Name</th>
+                            <th class="th-sm">Animal</th>
+                            <th class="th-sm"> Location</th>
+                            <th class="th-sm">Health</th>
+                            <th class="th-sm">Age</th>
+                            <th class="th-sm"> Time </th>
+                            <th class="th-sm">Number of Animals</th>
+                        <tr>
+                            <thread>
+                                <tbody>
+                                    <tr>
 
-                            <td> <a href="/report/$report.getId()" title="click $report.getRangerName() to  view the whole report"> $report.getRangerName() </a></td>
-                            <td> $report.getName()</td>
-                            <td> $report.getZone() </td>
-                            <td> $report.getHealth() </td>
-                            <td> $report.getAge() </td>
-                            <td class="time"> $report.getTime() </td>
-                            <td> $report.getAnimalCount() </td>
+                                        <td></td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td></td>
+                                        <td class="time"></td>
+                                        <td> </td>
 
-                        </tr>
-                        #end
-                        </tbody>
-        </table>
-        <br>
-        <br>
-        #if($reports)
+                                    </tr>
+                                </tbody>
+                </table>
+                <br>
+                <br>
 
-        <form action="/animal/check" method="post">
+            </div>
 
-            #foreach($report in $reports)
-            <input type="hidden" name="id" class="form-control" value="$report.getId()">
-            #end
-            <!-- <button type="submit">Delete</button> -->
-            #else
 
-            <p> Add an Animal</p>
-            #end
-            <form>
+        </div>
     </div>
+
 
 
 </div>
+
+{{/partial}}
+
+
+{{> layout.hbs}}

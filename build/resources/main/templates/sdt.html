@@ -1,4 +1,17 @@
-{{#partial "content"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    {{#partial "content"}}
 
 
 <div class="container-fluid main-pg">
@@ -32,9 +45,7 @@
     <div class="">
         <div class="row">
             <div id="instruction" class="col-md-3"><br><br>
-                <label>
-                    <h1 class="text-center text-white">Key in New Animal</h1>
-                </label>
+                <label> Key in New Animal </label>
                 <br>
                 <form class="grow" action="/reports" method="post">
                     <label><strong>Ranger Name</strong></label>
@@ -74,8 +85,7 @@
                 </form>
             </div>
 
-            <div class="col-md-9 tablet">
-
+            <div class="col-md-9">
                 <table class="table table-hover table-stripped table-bordered table-sm animated rubberBand "
                     cellspacing="0">
                     <thread>
@@ -90,22 +100,34 @@
                         <tr>
                             <thread>
                                 <tbody>
+                                    #foreach($report in $reports)
                                     <tr>
 
-                                        <td></td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td> </td>
-                                        <td></td>
-                                        <td class="time"></td>
-                                        <td> </td>
+                                        <td> <a href="/report/$report.getId()"
+                                                title="click $report.getRangerName() to  view the whole report">
+                                                $report.getRangerName() </a></td>
+                                        <td> $report.getName()</td>
+                                        <td> $report.getZone() </td>
+                                        <td> $report.getHealth() </td>
+                                        <td> $report.getAge() </td>
+                                        <td class="time">  </td>
+                                        <td> $report.getAnimalCount() </td>
 
                                     </tr>
                                 </tbody>
                 </table>
                 <br>
                 <br>
+                #if($reports)
 
+                <form action="/animal/check" method="post">
+
+                    #foreach($report in $reports)
+                    <input type="hidden" name="id" class="form-control" value="$report.getId()">
+
+
+                    <p> Add an Animal</p>
+                    <form>
             </div>
 
 
@@ -120,3 +142,5 @@
 
 
 {{> layout.hbs}}
+</body>
+</html>
