@@ -139,7 +139,5 @@ public class App {
             model.put("template", "templates/endangered-animal.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-
-
     }
 }
