@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EndangeredTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-09-22T06:53:54" hostname="access-ThinkPad-T450" time="0.341">
+<testsuite name="EndangeredTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-09-22T16:19:13" hostname="access-ThinkPad-T450" time="0.338">
   <properties/>
-  <testcase name="getHealth_returnsHealthAttribute_true" classname="EndangeredTest" time="0.01"/>
-  <testcase name="all_returnsAllInstancesOfEndangered_true" classname="EndangeredTest" time="0.071"/>
+  <testcase name="getHealth_returnsHealthAttribute_true" classname="EndangeredTest" time="0.008"/>
+  <testcase name="all_returnsAllInstancesOfEndangered_true" classname="EndangeredTest" time="0.07"/>
   <testcase name="Endangered_instantiatesCorrectly_true" classname="EndangeredTest" time="0.009"/>
-  <testcase name="update_updatesAgeAttribute_true" classname="EndangeredTest" time="0.064"/>
-  <testcase name="save_assignsIdAndSavesObjectToDatabase" classname="EndangeredTest" time="0.043"/>
-  <testcase name="find_returnsAnimalWithSameId_secondAnimal" classname="EndangeredTest" time="0.067"/>
-  <testcase name="update_updatesHealthAttribute_true" classname="EndangeredTest" time="0.071"/>
+  <testcase name="update_updatesAgeAttribute_true" classname="EndangeredTest" time="0.067"/>
+  <testcase name="save_assignsIdAndSavesObjectToDatabase" classname="EndangeredTest" time="0.044"/>
+  <testcase name="find_returnsAnimalWithSameId_secondAnimal" classname="EndangeredTest" time="0.066"/>
+  <testcase name="update_updatesHealthAttribute_true" classname="EndangeredTest" time="0.07"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

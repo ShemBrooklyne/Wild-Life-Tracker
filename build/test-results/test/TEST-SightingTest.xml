@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SightingTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-09-22T06:53:55" hostname="access-ThinkPad-T450" time="0.425">
+<testsuite name="SightingTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-09-22T16:19:13" hostname="access-ThinkPad-T450" time="0.404">
   <properties/>
-  <testcase name="equals_returnsTrueIfLocationAndDescriptionAreSame_true" classname="SightingTest" time="0.041"/>
-  <testcase name="sighting_instantiatesCorrectly_true" classname="SightingTest" time="0.043"/>
-  <testcase name="save_insertsObjectIntoDatabase_Sighting" classname="SightingTest" time="0.096"/>
-  <testcase name="all_returnsAllInstancesOfSighting_true" classname="SightingTest" time="0.123"/>
-  <testcase name="find_returnsSightingWithSameId_secondSighting" classname="SightingTest" time="0.117"/>
+  <testcase name="equals_returnsTrueIfLocationAndDescriptionAreSame_true" classname="SightingTest" time="0.038"/>
+  <testcase name="sighting_instantiatesCorrectly_true" classname="SightingTest" time="0.045"/>
+  <testcase name="save_insertsObjectIntoDatabase_Sighting" classname="SightingTest" time="0.086"/>
+  <testcase name="all_returnsAllInstancesOfSighting_true" classname="SightingTest" time="0.117"/>
+  <testcase name="find_returnsSightingWithSameId_secondSighting" classname="SightingTest" time="0.113"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

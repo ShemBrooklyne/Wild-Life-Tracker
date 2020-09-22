@@ -1,58 +1,8 @@
 
-{{#block "header"}}
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <base href="/">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Wildlife Tracker</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/styles.css">
-    </head>
-
-    <body>
-    <div class="container-fluid main-pg">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="/">Wildlife Tracker &copy;</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Sightings
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="/sightings">View Sightings</a>
-                                <a class="dropdown-item" href="/sightings/new">Report Sighting</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Animals
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="/animals/non-endangered">Non-endangered Animals</a>
-                                <a class="dropdown-item" href="/animals/endangered">Endangered Animals</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
+{{#partial "content"}}
+    <div class="container-fluid">
         <div class="container animals">
-            <a href="/animal/new">Add an animal to system to Report a Sighting</a>
+            <a href="/animal/new"><button class="btn btn-primary">Add an animal to system to Report a Sighting</button></a>
             <div class="content-stuff animal-form">
                 <h3>Add Non-Endangered Animals To The Database</h3>
                 <form action="/animal/new" method="post">
@@ -62,6 +12,8 @@
                     <button type="submit" class="btn btn-secondary tempting-azure-gradient">Add Animal</button>
                 </form>
             </div>
+            <br> <br>
+                <hr>
             <div class="row">
                 <div class="col-md-8 content-stuff">
                     <h3>Non Endangered Animals</h3>
@@ -74,33 +26,20 @@
                         </div>
                     </div>
                 </div>
+                <br> <br>
 
                 <div class="col-md-4">
-                    <div class="content-stuff animal-form">
-                        <h3>Add Non-Endangered Animals To The Database</h3>
-                        <form action="/animal/new" method="post">
-                            <label>Enter animal name</label>
-                            <input type="text" name="name" class="form-control">
-                            <br>
-                            <button type="submit" class="btn btn-secondary tempting-azure-gradient">Add Animal</button>
-                        </form>
-                    </div>
+
                 </div>
             </div>
-            #end
         </div>
 
 
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+{{/partial}}
 
-    </html>
-{{/block}}
-
+{{>layout.hbs}}
 
 

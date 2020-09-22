@@ -3,13 +3,16 @@ plugins {
     id 'application'
 }
 
+apply plugin:'java'
+
+group 'org.wildanimalsranger'
 version '1.0-SNAPSHOT'
-mainClassName = "App"
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -23,5 +26,5 @@ dependencies {
     compile group: 'org.postgresql', name: 'postgresql', version: "9.4-1201-jdbc41"
 }
 
-apply plugin: 'java'
-applicationName = 'shemswildlife-tracker'
+applicationName = "brooklynetracker"
+mainClassName = 'App'

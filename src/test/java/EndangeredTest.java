@@ -1,9 +1,7 @@
-import org.junit.*;
-import static org.junit.Assert.*;
-import org.sql2o.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
+import org.junit.Rule;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class EndangeredTest {
     @Rule
@@ -33,7 +31,7 @@ public class EndangeredTest {
     public void all_returnsAllInstancesOfEndangered_true() {
         Endangered firstEndangered = new Endangered("Rhino", "Healthy", "Young");
         firstEndangered.save();
-        Endangered secondEndangered = new Endangered("Bear", "Okay", "Adult");
+        Endangered secondEndangered = new Endangered("Koala", "Okay", "Adult");
         secondEndangered.save();
         assertEquals(true, Endangered.all().get(0).equals(firstEndangered));
         assertEquals(true, Endangered.all().get(1).equals(secondEndangered));
@@ -43,7 +41,7 @@ public class EndangeredTest {
     public void find_returnsAnimalWithSameId_secondAnimal() {
         Endangered firstEndangered = new Endangered("Rhino", "Healthy", "Young");
         firstEndangered.save();
-        Endangered secondEndangered = new Endangered("Bear", "Okay", "Adult");
+        Endangered secondEndangered = new Endangered("Koala", "Okay", "Adult");
         secondEndangered.save();
         assertEquals(Endangered.find(secondEndangered.getId()), secondEndangered);
     }
