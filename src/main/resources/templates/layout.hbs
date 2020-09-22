@@ -1,3 +1,4 @@
+{{#block "header"}}
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,10 +49,30 @@
             </ul>
           </div>
         </nav>
+          <div class="container">
 
-        <div class="container-fullwidth">
-            #parse($template)
-        </div>
+              <div class="row">
+                  <div class="col-md-8 pg-1">
+                      <p class="text-white text-center quote">
+                          “Wildlife is something which man cannot construct. Once it is gone, it is gone forever. <br>
+                          Man can rebuild a pyramid, but he can't rebuild ecology, or a giraffe.
+                      </p>
+                      <p class="auth text-white">Joy Adamso</p>
+                  </div>
+
+                  <div class="col-md-4 pg-2">
+
+                      <div class="btns">
+                          <a href="/"><button class="btn btn-secondary">Wild Animals</button></a> <br><br>
+                          <a href="/"><button class="btn btn-secondary">View Rangers</button></a> <br><br>
+                          <a href="/"><button class="btn btn-secondary">Key in Animal</button></a> <br><br>
+                          <a href="/"><button class="btn btn-secondary">Health Statuses</button></a>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
       </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -60,3 +81,4 @@
     </body>
 
 </html>
+{{/block}}

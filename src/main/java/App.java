@@ -1,5 +1,5 @@
 import spark.ModelAndView;
-import spark.template.velocity.VelocityTemplateEngine;
+import spark.template.handlebars.HandlebarsTemplateEngine;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +23,12 @@ public class App {
         port(4567);
 
         staticFileLocation("/public");
-        String layout = "templates/layout.vtl";
+//        String layout = "templates/layout.hbs";
+
+        get("/", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(new HashMap(), "index.hbs");
+        }, new HandlebarsTemplateEngine());
 
 
         get("/", (request, response) -> {
@@ -31,9 +36,9 @@ public class App {
             model.put("animals", Animal.all());
             model.put("endangeredAnimals", Endangered.all());
             model.put("sightings", Sighting.all());
-            model.put("template", "templates/index.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            model.put("template", "index.hbs");
+            return new ModelAndView(new HashMap(), "index.hbs");
+        }, new HandlebarsTemplateEngine());
 
 
         get("/sightings", (request, response) -> {
@@ -41,34 +46,34 @@ public class App {
             model.put("animals", Animal.all());
             model.put("endangeredAnimals", Endangered.all());
             model.put("sightings", Sighting.all());
-            model.put("template", "templates/sightings.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            model.put("template", "sightings.hbs");
+            return new ModelAndView(new HashMap(), "sightings.hbs");
+        }, new HandlebarsTemplateEngine());
 
         get("/animals/non-endangered", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("animals", Animal.all());
             model.put("sightings", Sighting.all());
-            model.put("template", "templates/animals.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            model.put("template", "animals.hbs");
+            return new ModelAndView(new HashMap(), "animals.hbs");
+        }, new HandlebarsTemplateEngine());
 
         get("/animals/endangered", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("endangeredAnimals", Endangered.all());
             model.put("sightings", Sighting.all());
-            model.put("template", "templates/endangered-animals.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            model.put("template", "endangered-animals.hbs");
+            return new ModelAndView(new HashMap(), "endangered-animals.hbs");
+        }, new HandlebarsTemplateEngine());
 
         get("/sightings/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("animals", Animal.all());
             model.put("endangeredAnimals", Endangered.all());
             model.put("sightings", Sighting.all());
-            model.put("template", "templates/sightings-form.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            model.put("template", "sightings-form.hbs");
+            return new ModelAndView(new HashMap(), "sightings-form.hbs");
+        }, new HandlebarsTemplateEngine());
 
         post("/endangered_sighting", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -83,8 +88,8 @@ public class App {
             String animal = Endangered.find(animalIdSelected).getName();
             model.put("animal", animal);
             response.redirect("/sightings");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            return new ModelAndView(new HashMap(), "sightings.hbs");
+        }, new HandlebarsTemplateEngine());
 
         post("/sighting", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -99,8 +104,8 @@ public class App {
             String animal = Animal.find(animalIdSelected).getName();
             model.put("animal", animal);
             response.redirect("/sightings");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            return new ModelAndView(new HashMap(), "sightings.hbs");
+        }, new HandlebarsTemplateEngine());
 
         post("/animal/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -128,16 +133,16 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             Animal animal = Animal.find(Integer.parseInt(request.params("id")));
             model.put("animal", animal);
-            model.put("template", "templates/animal.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            model.put("template", "animal.hbs");
+            return new ModelAndView(new HashMap(), "animal.hbs");
+        }, new HandlebarsTemplateEngine());
 
         get("/endangered_animal/:id", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             Endangered endangeredAnimal = Endangered.find(Integer.parseInt(request.params("id")));
             model.put("endangeredAnimal", endangeredAnimal);
-            model.put("template", "templates/endangered-animal.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+            model.put("template", "endangered-animal.hbs");
+            return new ModelAndView(new HashMap(), "endangered-animal.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
